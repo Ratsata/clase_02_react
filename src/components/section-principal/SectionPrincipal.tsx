@@ -1,4 +1,4 @@
-import SectionSecondary from './../sectionSecondary/SectionSecondary';
+import SectionSecondary from './../section-secondary/SectionSecondary';
 
 const SectionPrincipal = () => {
     return (

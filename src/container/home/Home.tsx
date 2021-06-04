@@ -1,8 +1,8 @@
 import './Home.css';
 import HeaderComponent from './../../components/header/HeaderComponent';
-import SectionPrincipal from './../../components/sectionPrincipal/SectionPrincipal';
+import SectionPrincipal from './../../components/section-principal/SectionPrincipal';
 import FooterComponent from '../../components/footer/FooterComponent';
-import ContactForm from './../../components/contactForm/ContactForm';
+import ContactForm from './../../components/contact-form/ContactForm';
 
 const Home = () => {
     return (
