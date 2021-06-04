@@ -1,13 +1,13 @@
 import './ContactForm.css'
 import { useEffect, useState } from "react"
 
-interface ContactFormProps {
+interface Contact {
     correo: string,
     mensaje: string
 }
 
 const ContactForm = () => {
-    const [contacto, setContacto] = useState<ContactFormProps>({
+    const [contacto, setContacto] = useState<Contact>({
         correo: '',
         mensaje: ''
     });

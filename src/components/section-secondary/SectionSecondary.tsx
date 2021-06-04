@@ -1,11 +1,18 @@
+import FrutasContext from '../../context/FrutasContext';
+import { useState, useContext } from 'react';
+
 const SectionSecondary = () => {
+    const ctx = useContext(FrutasContext);
+
     return (
         <div>
             <select className="form-select form-select-lg mb-3">
                 <option selected>Seleccione</option>
-                <option value="1">Manzana</option>
-                <option value="2">Pera</option>
-                <option value="3">Naranja</option>
+                {ctx.frutas.map((fruta, i) => (
+                    <option key={i} value={fruta}>
+                        {fruta}
+                    </option>
+                ))}
             </select>
         </div>
     )
